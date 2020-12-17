@@ -21,8 +21,10 @@ public class Driver : MonoBehaviour
         }
         if (verticalAxis != 0)
         {
-            position.y += horizontalAxis * MoveUnitsPerSecond * Time.deltaTime;
+            position.y += verticalAxis * MoveUnitsPerSecond * Time.deltaTime;
         }
         transform.position = position;
     }
+
+
 }
